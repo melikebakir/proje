@@ -35,14 +35,6 @@ public class T_baglanti {
 		}
 		    }
 	  
-	  static void sil(String sql_sorgu) {
-		  try {
-			myStat.executeUpdate(sql_sorgu);
-		} catch (SQLException e) {
-			
-			e.printStackTrace();
-		}
-	  }
 	  static ResultSet sorgula(String sql_sorgu) {
 		  ResultSet myRs = null;
 		  

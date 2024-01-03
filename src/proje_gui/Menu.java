@@ -60,6 +60,7 @@ public class Menu extends JFrame {
 						setVisible(false); 
 							}
 					
+					
 				});
 				
 				}

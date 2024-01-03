@@ -108,15 +108,15 @@ public class P_Guim extends JFrame {
 		            ResultSet rs = pstmt.executeQuery();
 
 		            if (rs.next()) {
-		                // Kullanıcı doğrulandı, yeni pencereyi açabilirsiniz
+		                // Kullanıcı doğrulandı, yeni pencereyi aç
 		                Menu menu = new Menu();
 		                menu.setVisible(true);
 		                setVisible(false); // Mevcut pencereyi gizle
 		            } else {
-		                JOptionPane.showMessageDialog(null, "Kullanıcı adı veya şifre yanlış.", "Hata", JOptionPane.ERROR_MESSAGE);
+		                JOptionPane.showMessageDialog(null, "Kullanıcı adı veya şifre hatalı.", "Hata", JOptionPane.ERROR_MESSAGE);
 		            }
 		        } catch (SQLException ex) {
-		            JOptionPane.showMessageDialog(null, "Veritabanı hatası: " + ex.getMessage(), "Hata", JOptionPane.ERROR_MESSAGE);
+		           
 		            ex.printStackTrace();
 		        }
 			
